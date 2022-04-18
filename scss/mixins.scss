@@ -1,0 +1,55 @@
+@mixin img-style {
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 100%;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.65);
+    transition: 0.5s;
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+
+}
+
+@mixin images-style {
+    width: 50%;
+    background-size: cover;
+    /*background-position: center;*/
+    transition: 0.5s;
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+
+}
+
+@mixin section-style {
+    background: white;
+    height: 400px;
+    display: flex;
+
+}
+
+@mixin content-style {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+
+    h2 {
+        margin-bottom: 10px;
+        padding-left: 80px;
+    }
+
+    p {
+        padding-left: 80px;
+        font-size: 1.1em;
+        color: #6c7581;
+    }
+
+}
