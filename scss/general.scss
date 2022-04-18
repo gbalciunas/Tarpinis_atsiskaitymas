@@ -1,0 +1,433 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f8f9fa;
+    font-family: lato;
+    /*  margin-left: 75px;*/
+    /* margin-right: 50px;*/
+    /*width: 90%;*/
+}
+
+
+
+.header {
+    background: #f8f9fa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-left: 200px;
+    padding-right: 200px;
+    height: 50px;
+
+
+}
+
+li {
+    list-style: none;
+
+
+
+    a {
+        text-decoration: none;
+        font-size: 1.1em;
+        font-family: lato;
+        color: #212529;
+    }
+
+
+
+}
+
+
+nav button {
+
+    border: 1px solid #007bff;
+    border-radius: 4px;
+    background: #007bff;
+    font-size: 1.0em;
+    font-family: lato;
+    color: white;
+    /*margin: auto;*/
+
+    width: 60px;
+    height: 34px;
+    cursor: pointer;
+    transition: 0.1s;
+
+}
+
+button:hover {
+
+    background: transparent;
+    color: #007bff;
+
+}
+
+
+
+
+.paragraph {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: url("../images/img1.jpg");
+    background-position: center;
+    width: auto;
+    height: 600px;
+    color: white;
+    font-size: 1.3em;
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.220);
+
+
+    }
+
+    h1 {
+        position: relative;
+        text-align: center;
+        z-index: 1;
+
+    }
+
+
+
+    form {
+        /*padding-top: 30px;*/
+        position: relative;
+        margin: 40px;
+
+        display: flex;
+
+        align-items: center;
+        flex-wrap: wrap;
+        z-index: 1;
+
+
+        input {
+
+            border: 1px solid white;
+            border-radius: 3px;
+            margin-right: 7px;
+            width: 380px;
+            height: 36px;
+            font-size: 0.8em;
+            font-family: lato;
+            padding-left: 20px;
+
+
+
+        }
+
+        button {
+
+            border: 1px solid #007bff;
+            border-radius: 4px;
+            background: #007bff;
+            font-size: 0.8em;
+            font-family: lato;
+
+            color: white;
+            margin: auto;
+            width: 120px;
+            height: 40px;
+            cursor: pointer;
+            transition: 0.1s;
+
+        }
+
+        button:hover {
+
+            background: transparent;
+            color: #007bff;
+
+        }
+
+
+
+    }
+
+}
+
+
+section.content {
+    display: flex;
+    justify-content: center;
+    /*flex-direction: row;*/
+    align-items: center;
+    /*flex-wrap: wrap;*/
+    background: #f8f9fa;
+    height: 350px;
+
+
+    p {
+        color: #6c757e;
+        padding: 10px;
+        font-size: 1.1em;
+
+    }
+
+
+    div {
+
+        margin: 40px;
+        text-align: center;
+
+    }
+
+
+
+    i {
+        padding-top: 30px;
+        font-size: 4em;
+        color: #007bff;
+        height: 85px;
+    }
+
+}
+
+.section1 {
+    @include section-style;
+
+
+    .content1 {
+        @include content-style;
+
+    }
+
+    .images1 {
+        background: url($images1);
+
+        @include images-style
+    }
+
+}
+
+.section2 {
+    @include section-style;
+
+
+    .content2 {
+        @include content-style;
+
+    }
+
+    .images2 {
+        background: url($images2);
+
+        @include images-style
+    }
+
+}
+
+.section3 {
+    @include section-style;
+
+
+    .content3 {
+        @include content-style;
+
+    }
+
+    .images3 {
+        background: url($images3);
+
+        @include images-style
+    }
+
+}
+
+section.avatar {
+
+    background: #f8f9fa;
+    height: 450px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    div {
+        text-align: center;
+    }
+
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+p {
+    color: #6c7581;
+}
+
+.imagesI {
+    background: url($imgI);
+    margin-left: 65px;
+    margin-bottom: 10px;
+    margin-top: 55px;
+
+    @include img-style;
+
+}
+
+.imagesII {
+    background: url($imgII);
+    margin-left: 70px;
+    margin-bottom: 10px;
+    margin-top: 45px;
+
+    @include img-style;
+
+}
+
+.imagesIII {
+    background: url($imgIII);
+    margin-left: 55px;
+    margin-bottom: 10px;
+    margin-top: 80px;
+
+    @include img-style;
+
+}
+
+.paragraph2 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: url("../images/img1.jpg");
+    background-position: center;
+    width: auto;
+    height: 250px;
+    color: white;
+    font-size: 1.1em;
+
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.220);
+
+
+    }
+
+    h1 {
+        position: relative;
+        text-align: center;
+        z-index: 1;
+        margin-top: 30px;
+
+    }
+
+
+
+    form {
+        /*padding-top: 30px;*/
+        position: relative;
+        margin: 20px;
+
+        display: flex;
+
+        align-items: center;
+        flex-wrap: wrap;
+        z-index: 1;
+
+
+        input {
+
+            border: 1px solid white;
+            border-radius: 3px;
+            margin-right: 7px;
+            width: 380px;
+            height: 36px;
+            font-size: 0.8em;
+            font-family: lato;
+            padding-left: 20px;
+
+
+
+        }
+
+        button {
+
+            border: 1px solid #007bff;
+            border-radius: 4px;
+            background: #007bff;
+            font-size: 0.8em;
+            font-family: lato;
+
+            color: white;
+            margin: auto;
+            width: 120px;
+            height: 40px;
+            cursor: pointer;
+            transition: 0.1s;
+
+        }
+
+        button:hover {
+
+            background: transparent;
+            color: #007bff;
+
+        }
+
+
+
+    }
+
+}
+
+footer {
+    background: #f8f9fa;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 200px;
+    padding-right: 200px;
+
+    a {
+        color: #007bff;
+        margin: 13px;
+        text-decoration: none;
+        font-size: 0.95em;
+
+
+    }
+
+    h5 {
+        color: rgb(166, 171, 175);
+        font-family: lato;
+        margin: 15px;
+
+    }
+
+    i {
+        color: #007bff;
+        font-size: 1.3em;
+        margin: 10px;
+        cursor: pointer;
+        transition: 0.5s;
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.5);
+        }
+
+    }
+
+}
